@@ -1,0 +1,215 @@
+{
+  "contractName": "Xcoin",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Xcoin.sol\":\"Xcoin\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Xcoin.sol\":{\"keccak256\":\"0x1d395472cc46f64645689d2bd7c2acae2c99f1bba9bc75c7e97e866fcda2c256\",\"urls\":[\"bzz-raw://768088ba090bfb5298c593cf1051840a4791455ea429c2a48a2e0e4e07e9d1fa\",\"dweb:/ipfs/QmXdt7JdkV1grdA3roYR7EBvHHjuEMeBUwzUxuXYzbrUyb\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603e80601d6000396000f3fe6080604052600080fdfea265627a7a72315820d79e2832e1d6b6e56c0cb81201f5bd2fd64e2cb8933d63158760ac1f5c063afb64736f6c63430005100032",
+  "deployedBytecode": "0x6080604052600080fdfea265627a7a72315820d79e2832e1d6b6e56c0cb81201f5bd2fd64e2cb8933d63158760ac1f5c063afb64736f6c63430005100032",
+  "sourceMap": "66:47:1:-;;;85:26;8:9:-1;5:2;;;30:1;27;20:12;5:2;85:26:1;66:47;;;;;;",
+  "deployedSourceMap": "66:47:1:-;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.9.0;\n\ncontract Xcoin {\n  constructor() public {\n  }\n}\n",
+  "sourcePath": "E:\\dapp\\contract\\contracts\\Xcoin.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/Xcoin.sol",
+    "exportedSymbols": {
+      "Xcoin": [
+        39
+      ]
+    },
+    "id": 40,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 34,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:32:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 39,
+        "linearizedBaseContracts": [
+          39
+        ],
+        "name": "Xcoin",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 37,
+              "nodeType": "Block",
+              "src": "106:5:1",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 38,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 35,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "96:2:1"
+            },
+            "returnParameters": {
+              "id": 36,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "106:0:1"
+            },
+            "scope": 39,
+            "src": "85:26:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 40,
+        "src": "66:47:1"
+      }
+    ],
+    "src": "32:82:1"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/Xcoin.sol",
+      "exportedSymbols": {
+        "Xcoin": [
+          39
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.4",
+            ".22",
+            "<",
+            "0.9",
+            ".0"
+          ]
+        },
+        "id": 34,
+        "name": "PragmaDirective",
+        "src": "32:32:1"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            39
+          ],
+          "name": "Xcoin",
+          "scope": 40
+        },
+        "children": [
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": true,
+              "kind": "constructor",
+              "modifiers": [
+                null
+              ],
+              "name": "",
+              "scope": 39,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 35,
+                "name": "ParameterList",
+                "src": "96:2:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 36,
+                "name": "ParameterList",
+                "src": "106:0:1"
+              },
+              {
+                "attributes": {
+                  "statements": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 37,
+                "name": "Block",
+                "src": "106:5:1"
+              }
+            ],
+            "id": 38,
+            "name": "FunctionDefinition",
+            "src": "85:26:1"
+          }
+        ],
+        "id": 39,
+        "name": "ContractDefinition",
+        "src": "66:47:1"
+      }
+    ],
+    "id": 40,
+    "name": "SourceUnit",
+    "src": "32:82:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-09-19T09:01:47.010Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
