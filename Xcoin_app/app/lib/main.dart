@@ -13,11 +13,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter Dapp',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'Dapp Home'),
     );
   }
 }
@@ -36,13 +36,13 @@ class _MyHomePageState extends State<MyHomePage> {
   late Client httpClient;
   late Web3Client ethClient;
   final myAdress = "0xf6824D3D12470298E4302843D6056BD68B4b296f";
+  
   double _value = 0.0;
   int myAmount = 0;
   var myData;
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     httpClient = Client();
     ethClient = Web3Client("https://rinkeby.infura.io/v3/1d5b3d78121343b8b9b9a1492c2b5949",httpClient);
@@ -81,14 +81,15 @@ class _MyHomePageState extends State<MyHomePage> {
   Future<String> depositCoin() async{
     var bigAmount = BigInt.from(myAmount);
     var response = await submit("depositBalance",[bigAmount]);
+    print(bigAmount);
     return response;
   }
 
   Future<String> submit(String functionName, List<dynamic> args) async{
-    EthPrivateKey credential = EthPrivateKey.fromHex("12f9b1233afa51af06f77350db68b5c98a29ee7acc4bee2a3c50bbbffe298c56");
+    EthPrivateKey credential = EthPrivateKey.fromHex("85d2242ae1b7759934d4b0d4f0d62d666cf7d73e21dbd09d73c7de266b72a25a");
     DeployedContract contract = await loadContract();
     final ethFunction = contract.function(functionName);
-    final result = await ethClient.sendTransaction(credential, Transaction.callContract(contract: contract, function: ethFunction, parameters: args), fetchChainIdFromNetworkId: true);
+    final result = await ethClient.sendTransaction(credential, Transaction.callContract(contract: contract, function: ethFunction, parameters: args, maxGas: 100000), chainId: 4);
     return result;
 
 
